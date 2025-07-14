@@ -58,4 +58,5 @@ Visit: http://127.0.0.1:8000/docs for Swagger UI.
     neeraj_postman_collection.json (your working Postman collection)
 
 # 📹 Video Links
-project-demo: [your_drive_link_to_demo_video]
+project-demo: link
+
