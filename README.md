@@ -1,57 +1,54 @@
 # KPA Wheel Specification API
 
-## 📌 Overview
-A FastAPI-based backend implementing the Wheel Specification Form APIs from the KPA Form Data documentation.
+This is a FastAPI-based backend project that implements one of the APIs from the KPA Form Data Postman collection.  
+It allows users to submit and retrieve wheel specification form data and stores it in a PostgreSQL database.
 
-## 🚀 Features
-- Create a new Wheel Specification (POST)
-- Get all or filtered Wheel Specifications (GET)
-- Stores data in PostgreSQL
-- Fully tested with Postman
+---
 
-## 🛠️ Tech Stack
-- Python 3.10+
-- FastAPI
-- SQLAlchemy
-- PostgreSQL
-- Pydantic
+## 🚀 Setup Instructions
 
-## 🔧 Setup Instructions
-
-### 1. Clone the Repository
+### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/YOUR_USERNAME/kpa_wheel_spec_project.git
 cd kpa_wheel_spec_project
-2. Create and Activate Virtual Environment
+2. Create a virtual environment and activate it
 bash
 Copy code
 python -m venv env
-env\Scripts\activate  # On Windows
-# or
-source env/bin/activate  # On Mac/Linux
-3. Install Dependencies
+env\Scripts\activate   # For Windows
+3. Install the requirements
 bash
 Copy code
 pip install -r requirements.txt
-4. Set Up PostgreSQL Database
-Create a database named kpa_db and update the .env file like:
+4. Configure .env
+Create a .env file in the root directory with:
 
 bash
 Copy code
-DATABASE_URL=postgresql://postgres:your_password@localhost/kpa_db
-5. Run the Server
+DATABASE_URL=postgresql://postgres:yourpassword@localhost/kpa_db
+5. Run the application
 bash
 Copy code
 uvicorn app.main:app --reload
-6. Visit the API Docs
-Open browser: http://127.0.0.1:8000/docs
+Visit: http://127.0.0.1:8000/docs for Swagger UI.
 
-📮 API Endpoints
-✅ POST /api/forms/wheel-specifications
-Creates a new wheel specification record.
+🧩 Tech Stack Used
+Python 3
 
-✅ GET /api/forms/wheel-specifications
-Fetches all records or filtered by query parameters:
+FastAPI
+
+PostgreSQL
+
+SQLAlchemy
+
+Pydantic
+
+✅ Implemented API Endpoints
+1. POST /api/forms/wheel-specifications
+Creates a new wheel specification form in the database.
+
+2. GET /api/forms/wheel-specifications
+Retrieves all wheel specification forms, with optional filters for:
 
 formNumber
 
@@ -59,15 +56,16 @@ submittedBy
 
 submittedDate
 
-📦 Postman Collection
-Import kpa_form.postman_collection.json in Postman to test both endpoints.
+📦 Files/Folders to Include in Submission
+app/ (your FastAPI code: main.py, routes/, models.py, schemas.py, etc.)
 
-🙋 Author
-NEERAJ D SHET
+.gitignore
 
-📁 Submission Format
-Source Code: (GitHub or zipped folder)
-
-Postman Collection: kpa_form.postman_collection.json
+requirements.txt
 
 README.md
+
+neeraj_postman_collection.json (your working Postman collection)
+
+📹 Video Links
+project-demo: [your_drive_link_to_demo_video]
