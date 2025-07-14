@@ -32,41 +32,30 @@ uvicorn app.main:app --reload
 Visit: http://127.0.0.1:8000/docs for Swagger UI.
 ```
 
-#🧩 Tech Stack Used
-Python 3
+# 🧩 Tech Stack Used
+    Python 3
+    FastAPI
+    PostgreSQL
+    SQLAlchemy
+    Pydantic
 
-FastAPI
+# ✅ Implemented API Endpoints
 
-PostgreSQL
-
-SQLAlchemy
-
-Pydantic
-
-#✅ Implemented API Endpoints
-
-1. POST /api/forms/wheel-specifications
+### 1. POST /api/forms/wheel-specifications
 Creates a new wheel specification form in the database.
 
-2. GET /api/forms/wheel-specifications
+### 2. GET /api/forms/wheel-specifications
 Retrieves all wheel specification forms, with optional filters for:
+          formNumber
+          submittedBy
+          submittedDate
 
-formNumber
-
-submittedBy
-
-submittedDate
-
-📦 Files/Folders to Include in Submission
+# 📦 Files/Folders to Include in Submission
 app/ (your FastAPI code: main.py, routes/, models.py, schemas.py, etc.)
-
 .gitignore
-
 requirements.txt
-
 README.md
-
 neeraj_postman_collection.json (your working Postman collection)
 
-📹 Video Links
+# 📹 Video Links
 project-demo: [your_drive_link_to_demo_video]
