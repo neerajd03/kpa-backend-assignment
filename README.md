@@ -8,31 +8,31 @@ It allows users to submit and retrieve wheel specification form data and stores 
 ## 🚀 Setup Instructions
 
 ### 1. Clone the repository
-```bash
+```
 git clone https://github.com/YOUR_USERNAME/kpa_wheel_spec_project.git
 cd kpa_wheel_spec_project
-2. Create a virtual environment and activate it
-bash
-Copy code
+```
+### 2. Create a virtual environment and activate it
+```
 python -m venv env
 env\Scripts\activate   # For Windows
-3. Install the requirements
-bash
-Copy code
+```
+### 3. Install the requirements
+```
 pip install -r requirements.txt
-4. Configure .env
+```
+### 4. Configure .env
+```
 Create a .env file in the root directory with:
-
-bash
-Copy code
 DATABASE_URL=postgresql://postgres:yourpassword@localhost/kpa_db
-5. Run the application
-bash
-Copy code
+```
+### 5. Run the application
+```
 uvicorn app.main:app --reload
 Visit: http://127.0.0.1:8000/docs for Swagger UI.
+```
 
-🧩 Tech Stack Used
+#🧩 Tech Stack Used
 Python 3
 
 FastAPI
@@ -43,7 +43,8 @@ SQLAlchemy
 
 Pydantic
 
-✅ Implemented API Endpoints
+#✅ Implemented API Endpoints
+
 1. POST /api/forms/wheel-specifications
 Creates a new wheel specification form in the database.
 
