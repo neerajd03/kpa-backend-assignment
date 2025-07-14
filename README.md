@@ -46,9 +46,9 @@ Creates a new wheel specification form in the database.
 
 ### 2. GET /api/forms/wheel-specifications
 Retrieves all wheel specification forms, with optional filters for:
-          formNumber
-          submittedBy
-          submittedDate
+formNumber
+submittedBy
+submittedDate
 
 # 📦 Files/Folders to Include in Submission
 app/ (your FastAPI code: main.py, routes/, models.py, schemas.py, etc.)
